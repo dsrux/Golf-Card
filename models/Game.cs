@@ -84,5 +84,26 @@ namespace golf_cart.models
         player.ShowScore();
       }
     }
+    public void TheWinner()
+    {
+      string winnerName = ""; int winnerScore = 1000;
+      foreach (Player player in Players)
+      {
+        int playerScore = 0;
+        foreach (int score in player.Scores)
+        {
+          playerScore += score;
+        }
+        if (playerScore < winnerScore)
+        {
+          winnerScore = playerScore;
+          winnerName = player.Name;
+        }
+      }
+      System.Console.WriteLine($"{winnerName} has won the game");
+    }
   }
+
+
+
 }

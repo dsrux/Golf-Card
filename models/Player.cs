@@ -20,10 +20,21 @@ namespace golf_cart.models
       foreach (int score in Scores)
       {
         total += score;
+
       }
-      System.Console.WriteLine($"{Name} - Score: {total}");
+
+      System.Console.WriteLine(value: $"{Name} - Score: {total}");
     }
+
+
+
+
+
+
+
+
   }
+
 
 
 

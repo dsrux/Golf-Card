@@ -1,7 +1,7 @@
 ﻿using System;
 using golf_cart.models;
 
-namespace golf_cart.models
+namespace golf_cart
 {
   class Program
   {
@@ -57,6 +57,7 @@ namespace golf_cart.models
       game.SetPlayers();
       game.StartGame();
       System.Console.WriteLine("Thank you for playing");
+      game.TheWinner();
 
 
     }
